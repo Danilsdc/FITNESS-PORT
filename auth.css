@@ -214,17 +214,47 @@ nav{
     position: absolute;
 }
 .auth{
-    width: 00%;
+    border-radius: 10px;
+    width: fit-content;
     color: white;
     background-color:#061049;
+    min-width: 400px;
+    width: 100%;
 }
 .choose{
-    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
     flex-direction: row;
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
 }
 .choose button {
     background-color: transparent;
     border: none;
     color: white;
     font-family: Jost;
+    font-size: 17px;
+}
+.registration form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.registration form div{
+    display: flex;
+    flex-direction: column;
+}
+.registration form input{
+    border-radius: 12px;
+    font-family: Jost;
+    border: 0;
+    padding: 2px 5px;
+    font-size: 17px;
+    width: 60%;
+}
+.registration label {
+    font-size: 21px;
 }
